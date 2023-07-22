@@ -1,0 +1,24 @@
+td{
+    padding: 0.2cm;
+
+}
+
+*{
+    font-family: Arial;
+}
+
+a:link{
+    color: rgb(79, 170, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(79, 170, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.nomor2{
+    color: rgb(253, 249, 7);
+    background: #009b00;
+}

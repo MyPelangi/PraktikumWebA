@@ -1,0 +1,55 @@
+body{
+    font-family: Comic Sans Ms;
+    text-align: center;
+    font-size: 150%;
+}
+
+.header{
+    background-color: aquamarine;
+    width: 100%;
+    height: 25%;
+}
+
+.main_besar{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+
+.footer{
+    background-color: aquamarine;
+    width: 100%;
+    height: 25%;
+}
+
+.main1{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+
+}
+.main2{
+    background-color: rgb(253, 242, 92);
+    width: 33.3%;
+    
+}
+.main3{
+    background-color: rgb(189, 255, 127);
+    width: 33.3%;
+    
+}
+
+.main1{
+    display: flex;
+    flex-direction: column;
+}
+
+.maina{
+    background-color: rgb(255, 164, 60);
+    height: 25%; 
+}
+
+.mainb{
+    background-color: rgb(253, 116, 92);
+    height: 25%; 
+}

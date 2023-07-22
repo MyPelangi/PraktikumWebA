@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Method tanpa parameter</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            class Car{
+                constructor(name, year){
+                    this.name = name;
+                    this.year = year;
+                }
+                getCarInfo(){
+                    let info = this.name + " " + this.year;
+                    return info;
+                }
+            }
+            let myCar = new Car("Ford", 2014);
+            document.write(myCar.getCarInfo());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            
+            function isi(){
+                var nim = document.getElementById("nim");
+                var nama = document.getElementById("nama");
+
+                var validasiAngka = /^[0-9]+$/;
+                var validasiHuruf = /^[a-zA-Z]+$/;
+
+                if(nim.value.match(validasiAngka)){
+                    if(nama.value.match(validasiHuruf)){
+                        alert("Pengisian berhasil!");
+                        document.getElementById("Hasil")
+                    }else{
+                        
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <p>Isi Biodata</p>
+              <form>
+                  <label>Nim</label>
+                  <input type="text" id="nim">
+                  <a href="javascript: nim();"></a>
+                  <br><br>
+                  <label>Nama</label>
+                  <input type="text" id="nama">
+                  <br><br>
+                  <button type="button">submit</button>
+              </form>
+          </div>
+    </body>
+</html>

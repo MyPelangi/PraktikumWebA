@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>TugasPertemuan6</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>ISI DATA MAHASISWA</h1>
+    <div class="data">
+      <label for="nama">Nama
+        <span class="important">*</span>
+      </label>
+      <input type="text" id="nama" required>
+      <br><br>
+      <label for="nim">NIM
+        <span class="important">*</span>
+      </label>
+      <input type="text" id="nim" required>
+      <br><br><br>
+      <label>Jenis Kelamin</label>
+      <br>
+      <input type="radio" id="pria" name="jeniskelamin" value="Laki-laki">Pria
+      <input type="radio" id="perempuan" name="jeniskelamin" value="Perempuan">Perempuan
+      <br><br>
+      <label for="tahun">Tahun Masuk
+        <span class="important">*</span>
+      </label>
+      <input type="number" id="tahun" required>
+      <br><br>
+      <button class="center" type="button" onclick="kirimInput()">Submit</button>
+    </div>
+  </body>
+</html>

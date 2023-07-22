@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Notifikasi</title>
+    <script type="text/javascript">
+        //membuat variabel pesan
+        //var untuk variabel yang isinya bisa di rubah/sementara
+        //let variabel sementara namun harus di inisialisasi
+        //cons untuk konstanta
+        var pesan="Dilarang masuk selain petugas";
+
+        function warning(){
+            alert(pesan);
+        }
+
+        function password(){
+            var pass= prompt("Masukkan Password");
+            //prompt untuk menampilkan input box bawaan browser
+            //kutip satu = karakter, kutip 2 = string/banyak kata. tapi sama sama string jd terserah
+            //javascript untuk melihat transaksi yang tidak dapat dilihat oleh user
+            //console.log 
+            if(pass!= 'petugas'){
+                // alert("Gagal");
+                console.log("Gagal");
+            }else{
+                // alert("Berhasil");
+                console.log("Berhasil");
+            }
+        }
+    </script>
+    </head>    
+    <body onload="warning();">
+        <p><b>Tempat rahasia</b></p>
+        <p>Anda belum mempunyai akses masuk!</p>
+        <a href="javascript: password();">Masuk-></a>
+    </body>
+</html>

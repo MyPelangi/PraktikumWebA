@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Inheritance</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            class Car{
+                constructor(name, year){
+                    this.name = name;
+                    this.year = year;
+                }
+                getCarInfo(x){
+                    console.log(x, "year", this.year);
+                    let age = x - this.year;
+                    let info = this.name + " " + age + " year ";
+                    return info;
+                }
+            }
+            
+            class Machine extends Car{
+                constructor(name, year, machine){
+                    super(name, year);
+                    this.machine = machine;
+                }
+                getMachineInfo(x){
+                    return this.getCarInfo(x) + "have type machine " + this.machine;
+                }
+            }
+            let myCar = new Car("Ford", 2014);
+            let date = new Date();
+            let year = date.getFullYear();
+            let myMachine = new Machine("Ford", 2014, "Gasoline");
+            document.write(myMachine.getMachineInfo(year));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+
+.data{
+    background-color: #c2f6ff;
+    width:fit-content;
+    padding: 20px;
+    margin: auto;
+    display: flexbox;
+    border-radius: 3%;
+    border: 2px solid rgb(129, 148, 253);
+}
+
+label{
+    margin-right: 0px;
+    position: relative;
+    display: inline-block;
+    min-width: 120px;
+}
+
+label:after{
+    position: absolute;
+    content: ":";
+    right: 0;
+}
+
+.important{
+    color: red;
+}
+
+.center{
+    margin: 0px 150px 0px 150px;
+}
+
+.center:hover{
+    border: 2px solid rgb(129, 148, 253);
+}

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Method dengan parameter</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            class Car{
+                constructor(name, year){
+                    this.name = name;
+                    this.year = year;
+                }
+                getCarInfo(x){
+                    let age = x - this.year;
+                    let info = this.name + " " + age;
+                    return info;
+                }
+            }
+            let myCar = new Car("Ford", 2014);
+            let date = new Date();
+            let year = date.getFullYear();
+            document.write(myCar.getCarInfo(year));
+        </script>
+    </body>
+</html>
